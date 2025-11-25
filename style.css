@@ -1,0 +1,349 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+html{
+    font-size: 62.3%;
+}
+
+
+header{
+    margin-top:20px ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 9%;
+    background-color: rgb(0, 0, 0 ,0.9);
+    filter: drop-shadow (0 0 10px red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0,3s ease;
+}
+.logo{
+    font-size: 6rem;
+    color: rgb(255, 0, 0);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-top: 20px;
+    padding-right: 15px;
+    
+}
+.logo:hover{
+    transform: scale(2);
+}
+nav a{
+    font-size: 2.2rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 700;
+    transition: 1s ease;
+    border-bottom: 3px solid transparent;
+    padding: 40px;
+}
+.typing-text
+{
+    color: red;
+}
+nav a:hover,
+nav a.active{
+    color: red;
+    border-bottom: 3px solid red;
+}
+@media  (max-width:995px){
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left:3px solid red ;
+    }
+}
+section{
+    min-height: 100vh;
+    padding: 8rem 9% 5rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+    padding-top: 50px;
+   
+}
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: white;
+}
+span{
+    color: red;
+}
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    
+}
+.home-content p{
+    font-size: 1.6rem;
+    color: white;
+}
+.home-image{
+    border-radius: 50%;
+}
+.home-image img{
+    position: relative;
+    width: 15vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid red;
+    cursor: pointer;
+    transition: 0.2s linear;
+    
+
+}
+.home-image img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}.icon  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid red;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0 ;
+    transition: 0.3s ease;
+    
+}
+.icon a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: red;
+    box-shadow: 0 0 25px red;
+}
+
+
+.typing-text
+{
+    font-size: 34px;
+    font-weight: 600;
+}
+.typing-text span{
+    position: relative;
+}
+
+.about {
+    padding: 5rem 9%;
+    background-color: hsla(0, 0%, 6%, 0.637) ;
+    color: white;
+}
+
+.about h2 {
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: red;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 20rem;
+    border-radius: 25%;
+    box-shadow: 0 0 25px rgb(43, 42, 42);
+}
+.projects {
+    padding: 5rem 9%;
+    background-color: #000;
+    color: white;
+}
+
+.projects h2 {
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: red;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #111;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 25rem;
+    text-align: center;
+    box-shadow: 0 0 20px red;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    margin: 1rem 0;
+    color: red;
+}
+
+.project-card p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    border: 2px solid red;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: red;
+    color: black;
+}
+.skills{
+ padding: 5rem 9%;
+ background-color: hsla(0, 0%, 6%, 0.637) ;
+ color: white;
+}
+.skills h2 {
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: red;
+}
+.skills-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 2rem;
+}
+.skill h3{
+  font-size: 1.8rem;
+  margin-bottom: .6rem;
+}
+.progress{
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+  height: 1.4rem;
+  overflow: hidden;
+  position: relative;
+}
+.progress span{
+  display: block;
+  height: 100%;
+  width: 0%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(255,0,0,0.95), rgba(255,80,80,0.8));
+  transition: width 1s ease;
+}
+.progress::after{
+  content: attr(data-value) '%';
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0.9;
+}
+.contact {
+  padding: 5rem 9%;
+  background: #050505;
+  color: white;
+}
+.contact h2{
+  font-size: 8rem;
+  color: red;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.contact-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+.contact-info p{ font-size: 1.6rem; margin-bottom: 1rem; }
+.contact-info ul{ list-style: none; padding:0; font-size:1.6rem; }
+.contact-info a{ color: #fff; text-decoration: underline; }
+
+.contact-form{
+  background: #0d0d0d;
+  padding: 1.8rem;
+  border-radius: .8rem;
+  box-shadow: 0 0 20px rgba(255,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+.contact-form label{ font-size: 1.3rem; }
+.contact-form input,
+.contact-form textarea{
+  background: #000;
+  color: #fff;
+  border: 1px solid rgba(255,0,0,0.25);
+  padding: .8rem;
+  border-radius: .4rem;
+  font-size: 1.4rem;
+}
+.contact-form .btn{
+  margin-top: .6rem;
+  padding: .7rem 1.2rem;
+  border: 2px solid red;
+  background: transparent;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: .6rem;
+}
+.contact-form .form-feedback{
+  margin-top: .6rem;
+  color: #b8ffb8;
+}

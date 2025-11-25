@@ -1,0 +1,45 @@
+.skills{
+ padding: 5rem 9%;
+ background-color: black;
+ color: white;
+}
+.skills h2 {
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: red;
+}
+.skills-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 2rem;
+}
+.skill h3{
+  font-size: 1.8rem;
+  margin-bottom: .6rem;
+}
+.progress{
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+  height: 1.4rem;
+  overflow: hidden;
+  position: relative;
+}
+.progress span{
+  display: block;
+  height: 100%;
+  width: 0%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(255,0,0,0.95), rgba(255,80,80,0.8));
+  transition: width 1s ease;
+}
+.progress::after{
+  content: attr(data-value) '%';
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0.9;
+}

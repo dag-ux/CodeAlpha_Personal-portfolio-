@@ -1,50 +1,138 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>persnal portfolio </title>
         <link  rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <header>
-          <a href="#" class="logo">DAGI</a>  
-       
-          
+            <a href="#" class="logo">DAGI</a>        
             <nav>
-                <a href="#" class="active">home</a>
-                <a href="#">services</a>
-                <a href="#">education</a>
-                <a href="#">contact</a>
-                <a href="#">skill</a>
+                <a href="" class="active">home</a>
+                <a href="about.html">about</a>
+                <a href="skill.html">skill</a>
+                <a href="project.html">project</a>
+                <a href="contact.html">contact</a>
             </nav>
         </header>
         <section class ="home">
             <div class="home-image">
-                <img src="C:\Users\rts\Desktop\personal portfol/my photo.jpg">
+                <img src="image/my photo.jpg">
             </div>
             <div class="home-content">
                 <h1>HI, It's <span>DAGI</span></h1>
-                <h3 class="typing-text">i'm a<span></span></h3>
+                <h3 class="typing-text"> <span></span></h3>
                 <P>Hi,I'm Dagimait Kebede,i study software enginnering in haramaya unversity
                    after i graduated for unversity  i want to be passinated web-site developer 
                    specially i need to work on frontend because i am very interested on that. for 
                    know i'm try to build my skill on this field. next year i have entership i plan 
                    to apply to merbe.tech. i  realy need to join this technology campany</P>
                    <div class=" icon">
-                 <a href="#">  <i class="fa-brands fa-square-github"></i></a>
-                                 
-                 <a href="#"><i class="fa-brand fa-github"></i></a>
-                    <a href="#"><i class="fa-brand fa-telegram"></i></a>
-                    <a href="#"><i class="fa-brand fa-instagram"></i></a>
+                    <a href="https://github.com/dag-ux"><i class="fa-brands fa-square-github"></i></a>                
+                    <a href="https://www.linkedin.com/in/dagimawit-kebede-9b443b395?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-            </div>
+                    </div>
+            </section>
+            <section class="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hello! I'm Dagimait Kebede, a passionate software engineering student 
+                            at Haramaya University. I love building websites, especially on the 
+                            frontend, because I enjoy making interfaces look beautiful and 
+                            interactive. My goal is to join a tech company like Merbe.Tech
+                             for internship and contribute to real projects.
+                        </p>
+                            </div>
+                            <div class="about-image">
+                                <img src="image/photo1.jpg" alt="My pc">
+                            </div>
+                    </div>
+            </section>
 
-        </section>
+            <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+        <div class="project-card">
+            <img src="path/to/project1.png" alt="Project 1">
+            <h3>Personal Portfolio</h3>
+            <p>A portfolio website built using HTML, CSS, and JavaScript.</p>
+            <a href="#" target="_blank">View Project</a>
         </div>
+        <div class="project-card">
+            <img src="path/to/project2.png" alt="Project 2">
+            <h3>image  gallary</h3>
+            <p>simple  image  gallary using  html, css,javascript.</p>
+            <a href="https://github.com/dag-ux/CodeAlpha_ProjectName" target="_blank">View Project</a>
+        </div>
+    </div>
+    </section>
+    <!-- ---------- Skills ---------- -->
+<section class="skills" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">
+      <h3>HTML</h3>
+      <div class="progress" data-value="95"><span></span></div>
+    </div>
+    <div class="skill">
+      <h3>CSS</h3>
+      <div class="progress" data-value="90"><span></span></div>
+    </div>
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <div class="progress" data-value="80"><span></span></div>
+    </div>
+    <div class="skill">
+      <h3>React (learning)</h3>
+      <div class="progress" data-value="60"><span></span></div>
+    </div>
+    <div class="skill">
+      <h3>Git / GitHub</h3>
+      <div class="progress" data-value="75"><span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- Contact ---------- -->
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <div class="contact-layout">
+    <div class="contact-info">
+      <p>Want to work together or offer an internship opportunity? Send me a message.</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:your-email@example.com">dagimawit kebede@gmali.com</a></li>
+        <li><strong>Location:</strong> Haramaya, Ethiopia</li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dagimawit-kebede-9b443b395?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">My LinkedIn</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/dag-ux" target="_blank" rel="noopener">dag-ux</a></li>
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required placeholder="Your name">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Tell me about the opportunity..."></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-feedback" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+            
 
 
 
-
+        <script src="script.js"></script>
     </body>
     
 </html>

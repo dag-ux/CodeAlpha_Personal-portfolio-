@@ -1,0 +1,37 @@
+.about {
+    padding: 3rem 5%;
+    background-color: black ;
+    color: white;
+}
+
+.about h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: red;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 20rem;
+    border-radius: 25%;
+    box-shadow: 0 0 25px rgb(43, 42, 42);
+}
